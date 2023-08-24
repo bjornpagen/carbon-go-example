@@ -10,6 +10,7 @@ const styles = `
 body {
 	max-width: 672px;
 	margin: 0 auto;
+	padding-bottom: 8rem;
 }
 main {
 	display: flex;
