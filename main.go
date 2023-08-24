@@ -51,7 +51,7 @@ func main() {
 				`<h3>Why does this exist?</h3>`,
 				`<p>Basically, it's React Server components but not shit.</p>`,
 				`<p>If you wanted to write an entire web app from scratch in Go, you had to write every single component by yourself.</p>`,
-				`<p><strong>Solution—</strong>why not take an existing design system that look good, and just implement it exactly, porting the React codebase, into Go?`,
+				`<p><strong>Solution—</strong>why not take an existing design system that already looks good, and just port components from the React codebase, into Go?`,
 			).Attr("id", "rationale"),
 
 			carbon.Section(
