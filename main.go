@@ -29,7 +29,8 @@ func main() {
 		`<meta charset="utf-8">`,
 		`<meta name="viewport" content="width=device-width, initial-scale=1">`,
 		`<title>Carbon Design Go</title>`,
-		carbon.Style().WithCustom(styles),
+		carbon.Style(),
+		`<style>` + styles + `</style>`,
 	}
 	body := []any{
 		carbon.Header().Company("Carbon").PlatformName("Go"),
