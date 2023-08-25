@@ -51,9 +51,16 @@ func main() {
 					x.Checkbox().LabelText("Write Go instead of JavaScript (noscript works)").Checked(true),
 					x.Checkbox().LabelText("Fully CSP friendly: no inline JS or inline styles").Checked(true),
 				),
-				x.ButtonSet(
-					x.Button("Get started").Href("https://github.com/bjornpagen/carbon-go").Icon(x.Checkmark()),
-					x.Button("See Demo").Kind("secondary").Href("https://github.com/bjornpagen/carbon-go-example").Icon(x.GitHub()),
+				x.Breakpoint(
+					x.ButtonSet(
+						x.Button("Get started").Href("https://github.com/bjornpagen/carbon-go").Icon(x.Checkmark()),
+						x.Button("See Demo").Kind("secondary").Href("https://github.com/bjornpagen/carbon-go-example").Icon(x.GitHub()),
+					).Stacked(true),
+				).Md(
+					x.ButtonSet(
+						x.Button("Get started").Href("https://github.com/bjornpagen/carbon-go").Icon(x.Checkmark()),
+						x.Button("See Demo").Kind("secondary").Href("https://github.com/bjornpagen/carbon-go-example").Icon(x.GitHub()),
+					),
 				),
 			).Attr("id", "hero"),
 

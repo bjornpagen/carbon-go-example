@@ -2,7 +2,7 @@ module github.com/bjornpagen/carbon-go-example
 
 go 1.21.0
 
-require github.com/bjornpagen/carbon-go v0.0.0-20230825042151-b73d641df075
+require github.com/bjornpagen/carbon-go v0.0.0-20230825045446-225054982599
 
 require (
 	github.com/sym01/htmlsanitizer v1.0.1 // indirect
