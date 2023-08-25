@@ -2,7 +2,7 @@ module github.com/bjornpagen/carbon-go-example
 
 go 1.21.0
 
-require github.com/bjornpagen/carbon-go v0.0.0-20230825034250-a0b154dcc3e7
+require github.com/bjornpagen/carbon-go v0.0.0-20230825042151-b73d641df075
 
 require (
 	github.com/efficientgo/core v1.0.0-rc.2 // indirect

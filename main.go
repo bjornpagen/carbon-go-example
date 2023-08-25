@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/bjornpagen/carbon-go"
+	x "github.com/bjornpagen/carbon-go"
 )
 
-const styles = `
+const myStyle = `
 body {
 	max-width: 672px;
 	margin: 0 auto;
@@ -32,52 +32,55 @@ func main() {
 		`<meta charset="utf-8">`,
 		`<meta name="viewport" content="width=device-width, initial-scale=1">`,
 		`<title>Carbon Design Go</title>`,
-		carbon.Style(),
-		`<style>` + styles + `</style>`,
+		x.Style(x.BaseCss),
+		x.Style(x.FontFamilyCss),
+		x.Style(myStyle),
 	}
 	body := []any{
-		carbon.Header().Company("Carbon").PlatformName("Go"),
-		carbon.Content(
-			carbon.Section(
+		x.Header().Company("Carbon").PlatformName("Go"),
+		x.Content(
+			x.Section(
 				`<h1>carbon-go</h1>`,
-				`<p>A conformant implementation of IBM's `,
-				carbon.Link("Carbon Design").Href("https://carbondesignsystem.com/").Inline(true),
-				`, built for HTMX/SSR first.</p>`,
-				carbon.Div(
-					carbon.Checkbox().LabelText("Store all application state server side").Checked(true),
-					carbon.Checkbox().LabelText("Write Go instead of JavaScript (noscript works)").Checked(true),
-					carbon.Checkbox().LabelText("Fully CSP friendly: no inline JS or inline styles").Checked(true),
+				x.P(
+					`A conformant implementation of IBM's `,
+					x.Link("Carbon Design").Href("https://carbondesignsystem.com/").Inline(true),
+					`, built for HTMX/SSR first.`,
 				),
-				carbon.ButtonSet(
-					carbon.Button("Get started").Href("https://github.com/bjornpagen/carbon-go").Icon(carbon.Checkmark()),
-					carbon.Button("See Demo").Kind("secondary").Href("https://github.com/bjornpagen/carbon-go-example").Icon(carbon.GitHub()),
+				x.Div(
+					x.Checkbox().LabelText("Store all application state server side").Checked(true),
+					x.Checkbox().LabelText("Write Go instead of JavaScript (noscript works)").Checked(true),
+					x.Checkbox().LabelText("Fully CSP friendly: no inline JS or inline styles").Checked(true),
+				),
+				x.ButtonSet(
+					x.Button("Get started").Href("https://github.com/bjornpagen/carbon-go").Icon(x.Checkmark()),
+					x.Button("See Demo").Kind("secondary").Href("https://github.com/bjornpagen/carbon-go-example").Icon(x.GitHub()),
 				),
 			).Attr("id", "hero"),
 
-			carbon.Section(
+			x.Section(
 				`<h3>Why does this exist?</h3>`,
 				`<p>Basically, it's React Server components but not shit.</p>`,
 				`<p>If you wanted to write an entire web app from scratch in Go, you had to write every single component by yourself.</p>`,
 				`<p><strong>Solution—</strong>why not take an existing design system that already looks good, and just port components from the React codebase, into Go?`,
 			).Attr("id", "rationale"),
 
-			carbon.Section(
+			x.Section(
 				`<h3>FAQ</h3>`,
-				carbon.Accordion(
-					carbon.AccordionItem().Title("<strong>Why would you want to use this instead of React?</strong>").Content("<p>Because hypermedia is the engine of application state.</p>").Open(true),
-					carbon.AccordionItem().Title("<strong>Why do you bundle 600KB of CSS?</strong>").Content("<p>Currently we bundle all of Carbon Design's upstream styles directly, but we really should be smarter about generating this from only the components we use. This is on the TODO list.</p>").Open(true),
-					carbon.AccordionItem().Title("<strong>This is wrong! The markup looks ugly!</strong>").Content("<p>I think it looks great. Go back to your JavaScript frameworks.</p>").Open(true),
+				x.Accordion(
+					x.AccordionItem().Title("<strong>Why would you want to use this instead of React?</strong>").Content("<p>Because hypermedia is the engine of application state.</p>").Open(true),
+					x.AccordionItem().Title("<strong>Why do you bundle 600KB of CSS?</strong>").Content("<p>Currently we bundle all of Carbon Design's upstream styles directly, but we really should be smarter about generating this from only the components we use. This is on the TODO list.</p>").Open(true),
+					x.AccordionItem().Title("<strong>This is wrong! The markup looks ugly!</strong>").Content("<p>I think it looks great. Go back to your JavaScript frameworks.</p>").Open(true),
 				),
 			).Attr("id", "faq"),
 
-			carbon.Section(
+			x.Section(
 				`<h3>What's next?</h3>`,
-				carbon.UnorderedList(
-					carbon.ListItem("Add the rest of the components"),
-					carbon.ListItem("Implement the optional client side JS for accordion"),
-					carbon.ListItem("Comb through the API and make it stable/idiomatic"),
-					carbon.ListItem("Add comprehensise tests and documentation"),
-					carbon.ListItem("Add a smart process to generate the CSS from only the components we use"),
+				x.UnorderedList(
+					x.ListItem("Add the rest of the components"),
+					x.ListItem("Implement the optional client side JS for accordion"),
+					x.ListItem("Comb through the API and make it stable/idiomatic"),
+					x.ListItem("Add comprehensise tests and documentation"),
+					x.ListItem("Add a smart process to generate the CSS from only the components we use"),
 				),
 			),
 		),
@@ -85,7 +88,7 @@ func main() {
 
 	os.Mkdir("out", 0755)
 	f, _ := os.Create("out/index.html")
-	carbon.Html().Head(head).Body(body).Render(f)
+	x.Html().Head(head).Body(body).Render(f)
 	f.Sync()
 	f.Close()
 }

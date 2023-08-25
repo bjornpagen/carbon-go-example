@@ -4,6 +4,10 @@ github.com/bjornpagen/carbon-go v0.0.0-20230825001455-fd65c05b2cc0 h1:R8/d9FdudT
 github.com/bjornpagen/carbon-go v0.0.0-20230825001455-fd65c05b2cc0/go.mod h1:g8E7AMLbdPmcp61vds9Xd1boS7zU6PPyWoRWzP0nwVY=
 github.com/bjornpagen/carbon-go v0.0.0-20230825034250-a0b154dcc3e7 h1:ymby2Xishl4oCbuK5IhpxuFIP2sWIBVZLnHgBPrBEnQ=
 github.com/bjornpagen/carbon-go v0.0.0-20230825034250-a0b154dcc3e7/go.mod h1:g8E7AMLbdPmcp61vds9Xd1boS7zU6PPyWoRWzP0nwVY=
+github.com/bjornpagen/carbon-go v0.0.0-20230825041418-781ea3a9856d h1:iMJLORF/nn1S82SksdUbsUtfTYUojvhD6AADzQLCP/0=
+github.com/bjornpagen/carbon-go v0.0.0-20230825041418-781ea3a9856d/go.mod h1:g8E7AMLbdPmcp61vds9Xd1boS7zU6PPyWoRWzP0nwVY=
+github.com/bjornpagen/carbon-go v0.0.0-20230825042151-b73d641df075 h1:UN3AbfTESCzpruiuv+DH2uXK/WCerwq/FdRf1h8Xd8w=
+github.com/bjornpagen/carbon-go v0.0.0-20230825042151-b73d641df075/go.mod h1:cL3SmeUVrhZXm3hDLlBFHYspsF0gxGWQh7BY723E6Tc=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/efficientgo/core v1.0.0-rc.2 h1:7j62qHLnrZqO3V3UA0AqOGd5d5aXV3AX6m/NZBHp78I=
