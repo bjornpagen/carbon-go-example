@@ -1,5 +1,7 @@
 github.com/bjornpagen/carbon-go v0.0.0-20230824223948-4b5bfdd2d3ac h1:4HiTvyoQ3PoNSsT0RUc0RbgRARCQAmkYaWO0HDcGyYA=
 github.com/bjornpagen/carbon-go v0.0.0-20230824223948-4b5bfdd2d3ac/go.mod h1:g8E7AMLbdPmcp61vds9Xd1boS7zU6PPyWoRWzP0nwVY=
+github.com/bjornpagen/carbon-go v0.0.0-20230825001455-fd65c05b2cc0 h1:R8/d9FdudTVQMx+F8aZ9XUO/wVmHNx+wKV5QoWtFJ0Q=
+github.com/bjornpagen/carbon-go v0.0.0-20230825001455-fd65c05b2cc0/go.mod h1:g8E7AMLbdPmcp61vds9Xd1boS7zU6PPyWoRWzP0nwVY=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/efficientgo/core v1.0.0-rc.2 h1:7j62qHLnrZqO3V3UA0AqOGd5d5aXV3AX6m/NZBHp78I=
