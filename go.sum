@@ -6,6 +6,10 @@ github.com/bjornpagen/carbon-go v0.0.0-20230825045024-c5dac19da88f h1:AhG0CKalHy
 github.com/bjornpagen/carbon-go v0.0.0-20230825045024-c5dac19da88f/go.mod h1:cL3SmeUVrhZXm3hDLlBFHYspsF0gxGWQh7BY723E6Tc=
 github.com/bjornpagen/carbon-go v0.0.0-20230825045446-225054982599 h1:hy3agB3+7VELtJbc9QXATiVJcgy537nnpNzKpUOq/kE=
 github.com/bjornpagen/carbon-go v0.0.0-20230825045446-225054982599/go.mod h1:cL3SmeUVrhZXm3hDLlBFHYspsF0gxGWQh7BY723E6Tc=
+github.com/bjornpagen/carbon-go v0.0.0-20230825191332-6c38bf6c1820 h1:61ZvJQSFi1+sryFUx6VNEw8ISNz55Tv+2AdY5gJ5T+k=
+github.com/bjornpagen/carbon-go v0.0.0-20230825191332-6c38bf6c1820/go.mod h1:cL3SmeUVrhZXm3hDLlBFHYspsF0gxGWQh7BY723E6Tc=
+github.com/bjornpagen/carbon-go v0.0.0-20230825191629-3b184adaf50b h1:xeSlxizBP+xkfXvEKwTXAURmvmho+jdn6oE2QrASMH0=
+github.com/bjornpagen/carbon-go v0.0.0-20230825191629-3b184adaf50b/go.mod h1:cL3SmeUVrhZXm3hDLlBFHYspsF0gxGWQh7BY723E6Tc=
 github.com/sym01/htmlsanitizer v1.0.1 h1:a+r9gDExjeJsvENRTW/cxyGuloCJF0s1dcwr83MctGY=
 github.com/sym01/htmlsanitizer v1.0.1/go.mod h1:zazTkJ727MJTDrNcWDaOLlAgGMcsDNG94LJi6vYl6Ug=
 github.com/tdewolff/minify/v2 v2.12.8 h1:Q2BqOTmlMjoutkuD/OPCnJUpIqrzT3nRPkw+q+KpXS0=
