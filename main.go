@@ -22,6 +22,9 @@ section {
 	flex-direction: column;
 	gap: 1.5rem;
 }
+* .bx--link {
+	font-size: inherit;
+}
 `
 
 func main() {
@@ -37,7 +40,9 @@ func main() {
 		carbon.Content(
 			carbon.Section(
 				`<h1>carbon-go</h1>`,
-				`<p>A conformant implementation of IBM's Carbon Design, built for HTMX/SSR first.</p>`,
+				`<p>A conformant implementation of IBM's `,
+				carbon.Link("Carbon Design").Href("https://carbondesignsystem.com/").Inline(true),
+				`, built for HTMX/SSR first.</p>`,
 				carbon.Div(
 					carbon.Checkbox().LabelText("Store all application state server side").Checked(true),
 					carbon.Checkbox().LabelText("Write Go instead of JavaScript (noscript works)").Checked(true),
@@ -59,7 +64,7 @@ func main() {
 			carbon.Section(
 				`<h3>FAQ</h3>`,
 				carbon.Accordion(
-					carbon.AccordionItem().Title("<strong>Why would you want to use this instead of React?</strong>").Content("<p>Because I prefer Go and hypermedia as the engine of application state.</p>").Open(true),
+					carbon.AccordionItem().Title("<strong>Why would you want to use this instead of React?</strong>").Content("<p>Because hypermedia is the engine of application state.</p>").Open(true),
 					carbon.AccordionItem().Title("<strong>Why do you bundle 600KB of CSS?</strong>").Content("<p>Currently we bundle all of Carbon Design's upstream styles directly, but we really should be smarter about generating this from only the components we use. This is on the TODO list.</p>").Open(true),
 					carbon.AccordionItem().Title("<strong>This is wrong! The markup looks ugly!</strong>").Content("<p>I think it looks great. Go back to your JavaScript frameworks.</p>").Open(true),
 				),
