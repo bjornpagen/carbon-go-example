@@ -33,7 +33,7 @@ func main() {
 		`<meta name="viewport" content="width=device-width, initial-scale=1">`,
 		`<title>Carbon Design Go</title>`,
 		x.Style(x.BaseCss),
-		x.Style(x.FontFamilyCss),
+		x.Style(x.BaseFontCss),
 		x.Style(myStyle),
 	}
 	body := []any{
